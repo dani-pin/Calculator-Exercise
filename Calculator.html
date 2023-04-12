@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png"
+    />
+    <title>Calculator by Daniela</title>
+    <link rel="stylesheet" href="./Calculator.css" />
+  </head>
+  <body>
+    <h1>Calculator by Daniela Pinzon!</h1>
+    <div class="main-container">
+      <p id="consoleResult" class="console"></p>
+      <p>
+        <!-- Button 1 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation += '1';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          1
+        </button>
+        <!-- Button 2 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation += '2';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          2
+        </button>
+        <!-- Button 3 -->
+        <button
+          class="grey-button"
+          onclick="
+            calculation+= '3';
+            console.log(calculation);
+            consoleResultParagraph.innerHTML = calculation;"
+        >
+          3
+        </button>
+        <!-- Button + -->
+        <button
+          class="orange-button"
+          onclick="
+            calculation += ' + ';
+            console.log(calculation);
+            consoleResultParagraph.innerHTML = calculation;"
+        >
+          +
+        </button>
+      </p>
+      <p>
+        <!-- Button 4 -->
+        <button
+          class="grey-button"
+          onclick="
+            calculation+= '4';
+            console.log(calculation);
+            consoleResultParagraph.innerHTML = calculation;"
+        >
+          4
+        </button>
+        <!-- Button 5 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation+= '5';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          5
+        </button>
+        <!-- Button 6 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation+= '6';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          6
+        </button>
+        <!-- Button (-) -->
+        <button
+          class="orange-button"
+          onclick="
+              calculation+=' - ';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          -
+        </button>
+      </p>
+      <p>
+        <!-- Button 7 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation+='7';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          7
+        </button>
+        <!-- Button 8 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation+='8';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          8
+        </button>
+        <!-- Button 9 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation+='9';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          9
+        </button>
+        <!-- Button * -->
+        <button
+          class="orange-button"
+          onclick="
+              calculation += ' * ';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          *
+        </button>
+      </p>
+      <p>
+        <!-- Button 0 -->
+        <button
+          class="grey-button"
+          onclick="
+              calculation+='0';
+              console.log(calculation);
+              consoleResultParagraph.innerHTML = calculation;"
+        >
+          0
+        </button>
+        <!-- Button . -->
+        <button
+          class="grey-button"
+          onclick="
+          calculation += '.';
+          console.log(calculation);
+          consoleResultParagraph.innerHTML = calculation;"
+        >
+          .
+        </button>
+        <!-- Button = -->
+        <button
+          class="grey-button"
+          onclick="
+            calculation = Math.round(eval(calculation)*1000)/1000;
+            console.log(calculation);
+            consoleResultParagraph.innerHTML = calculation;"
+        >
+          =
+        </button>
+        <!-- Button / -->
+        <button
+          class="orange-button"
+          onclick="
+          calculation += ' / ';
+          console.log(calculation);
+          consoleResultParagraph.innerHTML = calculation;"
+        >
+          /
+        </button>
+      </p>
+      <p>
+        <!-- Clear Button -->
+        <button
+          class="grey-button clear-button"
+          onclick="
+          calculation = '';
+          console.log('Cleared.');
+          consoleResultParagraph.innerHTML = calculation;"
+        >
+          Clear
+        </button>
+      </p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      let calculation = "";
+      const consoleResultParagraph = document.querySelector("#consoleResult");
+    </script>
+  </body>
+</html>
